@@ -27,7 +27,6 @@ st.write(df)
 advertising_model = pickle.load(open("Advertising.h5", "rb")) #rb: read binary
 
 prediction = advertising_model.predict(df)
-prediction_proba = advertising_model.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
 st.write(Y.unique())
@@ -36,4 +35,3 @@ st.subheader('Prediction')
 st.write(prediction)
 
 st.subheader('Prediction Probability')
-st.write(prediction_proba)
