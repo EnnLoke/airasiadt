@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 from sklearn.naive_bayes import GaussianNB
+import pickle 
 
 st.write("# Advertising Model Prediction")
 st.write("This app predicts the **Ads Model** type!")
