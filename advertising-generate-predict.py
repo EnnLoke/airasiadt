@@ -29,9 +29,7 @@ advertising_model = pickle.load(open("Advertising.h5", "rb"))
 prediction = advertising_model.predict(df)
 
 st.subheader('Class labels and their corresponding index number')
-st.write(pickle.load.unique())
+st.write(TV,Radio,Newspaper)
 
 st.subheader('Prediction')
 st.write(prediction)
-
-st.subheader('Prediction Probability')
