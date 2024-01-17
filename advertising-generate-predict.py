@@ -29,7 +29,7 @@ advertising_model = pickle.load(open("Advertising.h5", "rb"))
 prediction = advertising_model.predict(df)
 
 st.subheader('Class labels and their corresponding index number')
-st.write(Y.unique())
+st.write(advertising_model.unique())
 
 st.subheader('Prediction')
 st.write(prediction)
