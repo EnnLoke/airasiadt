@@ -3,13 +3,13 @@ import pandas as pd
 import seaborn as sns
 from sklearn.naive_bayes import GaussianNB
 
-st.write("# Simple Iris Flower Prediction App")
-st.write("This app predicts the **Iris flower** type!")
+st.write("# Advertising Model Prediction")
+st.write("This app predicts the **Ads Model** type!")
 
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    TV = st.sidebar.slider('TV', 0.7, 296.4, 148.5) #('sepal length', min value, max value, set value)
+    TV = st.sidebar.slider('TV', 0.7, 296.4, 148.5) 
     Radio = st.sidebar.slider('Radio', 0.0, 49.6,24.8 )
     Newspaper = st.sidebar.slider('Newspaper', 0.3, 114, 57.2)
     data = {'TV': TV,
