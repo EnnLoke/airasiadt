@@ -11,7 +11,7 @@ st.sidebar.header('User Input Parameters')
 def user_input_features():
     TV = st.sidebar.slider('TV', 0.7, 296.4, 148.5) 
     Radio = st.sidebar.slider('Radio', 0.0, 49.6,24.8 )
-    Newspaper = st.sidebar.slider('Newspaper', 0.3, 114, 57.2)
+    Newspaper = st.sidebar.slider('Newspaper', 0.3, 114.0, 57.2)
     data = {'TV': TV,
             'Radio': Radio,
             'Newspaper': Newspaper}
